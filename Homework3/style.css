@@ -1,0 +1,143 @@
+* {
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    background-color: #f9f9f9;
+}
+.wrapper {
+    margin: auto;
+    padding: 50px 48px;
+    width: 964px;
+    height: 850px;
+    background-color: #ffffff;
+  /*border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;*/
+    box-shadow: 0 0 5px rgba(219,219,219,0.7);
+    font-size: 14px;
+}
+
+/*header*/
+.header {
+  height: 162px;
+}
+.menu {
+  margin: 40px 0;
+  height: 40px;
+  background-color: #505050;
+}
+.menu li {
+  width: 133px;
+  height: 38px;
+  text-align: center;
+  line-height: 2.8;
+  display: inline-block;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+.menu li:first-child a{
+  padding-left: 26px;
+  width: 105px;
+  text-align:  left;
+}
+.menu li:hover {
+  background-color: #333333;
+  border-right: 1px solid #838383;
+  border-left: 1px solid #838383;
+}
+.menu a {
+  display: block;
+  width: 133px;
+  height: 38px;
+  color:  #ffffff;
+  font-family: "OpenSans";
+  font-size: 14.67px;
+  text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*content*/
+.container {
+  height: 640px;
+}
+.sidebar {
+  width: 238px;
+  height: 233px;
+  border: 1px solid #838383;
+  float: left;
+}
+.sidebar li {
+  padding-left: 22px;
+  height: 38px;
+  line-height: 2.8;
+  background-color: #ffffff;
+  border-bottom: 1px solid #838383;
+  }
+.sidebar li:last-child {
+  border-bottom: none;
+}
+.sidebar li:hover {
+  padding-left: 34px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #838383;
+}
+.sidebar li a {
+  display: block;
+  width: 218px;
+  height: 38px;
+  color: #656363;
+  font-family: "OpenSans";
+  font-size: 13.333px;
+}
+.sidebar li a:hover {
+  color: #2c2c2c;
+}
+.content {
+  width: 676px;
+  height: 640px;
+  float: right;
+  text-align:center;
+}
+.image {
+  padding-top: 47px;
+  width: 674px;
+  height: 351px;
+  border: 1px solid #c8c8c8;
+}
+p {
+  padding: 40px 25px;
+  color: #2c2c2c;
+  font-family: "OpenSans";
+  font-size: 13.333px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/*footer*/
+.footer {
+  height: 40px;
+  background-color: #e1e1e1;
+}
+.footer li {
+  width: 135px;
+  height: 38px;
+  text-align: center;
+  line-height: 2.8;
+  display: inline-block;
+}
+.footer li:hover {
+  text-decoration: underline;
+}
+.footer li:last-child {
+  width: 370px;
+  text-align: right;
+  text-decoration: none;
+}
+.footer a {
+  display: block;
+  width: 135px;
+  height: 38px;
+  color: #2c2c2c;
+  font-family: "OpenSans";
+  font-size: 13.333px;
+  line-height: 1.6;
+}
