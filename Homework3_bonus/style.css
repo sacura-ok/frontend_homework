@@ -1,0 +1,89 @@
+* {
+    text-decoration: none;
+}
+body {
+  margin: 0;
+}
+.wrapper {
+  margin: auto;
+  width: 960px;
+  height: 883px;
+  background-image: url(img/background.jpg);
+}
+.logo {
+  margin: auto;
+  position: absolute;
+  padding-top: 130px;
+  padding-left: 70px;
+  color: #e6e6e6;
+  z-index: 2;
+}
+.logo p{
+  text-align: center;
+  font-size: 12px;
+  font-family: "Tahoma";
+  font-weight: bold;
+  line-height: 1.2;
+}
+.tree {
+  position: absolute;
+  padding-top: 50px;
+  padding-left: 210px;
+  z-index: 1;
+}
+.contacts {
+  padding-top: 150px;
+  padding-right: 30px;
+  width: 150px;
+  font-size: 10px;
+  font-family: "Tahoma";
+  color: #e6e6e6;
+  line-height: 1.2;
+  float: right;
+}
+.contacts p:first-child{
+  font-size: 12px;
+  font-weight: bold;
+}
+.contacts a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+.content_line1 a,
+.content_line2 a {
+  margin-left: 12px;
+  margin-top: 200px;
+  margin-bottom: 56px;
+  width: 268px;
+  height: 184px;
+  display: inline-block;
+  float: left;
+}
+.content_line1 a:first-child,
+.content_line2 a:first-child {
+  margin-left: 70px;
+}
+.content_line1 a:last-child,
+.content_line2 a {
+  margin-top: 12px;
+}
+.content_line1 p,
+.content_line2 p {
+  margin-top: -5px;
+  font-size: 16px;
+  font-family: "Tahoma";
+  font-weight: bold;
+  color: #e6e6e6;
+  text-align: center;
+}
+.footer p{
+  padding-top: 140px;
+  padding-left: 149px;
+  width: 650px;
+  height: 20px;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Tahoma";
+  color: #e6e6e6;
+  display: inline-block;
+}
