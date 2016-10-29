@@ -24,7 +24,7 @@ body {
 .menu {
   margin: 40px 0;
   height: 40px;
-  background-color: #505050;
+  background-image: linear-gradient(to top,  #444343, #5e5e5e);
 }
 .menu li {
   width: 133px;
@@ -66,7 +66,6 @@ body {
   float: left;
 }
 .sidebar li {
-  padding-left: 22px;
   height: 38px;
   line-height: 2.8;
   background-color: #ffffff;
@@ -76,19 +75,19 @@ body {
   border-bottom: none;
 }
 .sidebar li:hover {
-  padding-left: 34px;
   background-color: #f9f9f9;
   border-bottom: 1px solid #838383;
 }
 .sidebar li a {
   display: block;
-  width: 218px;
+  padding-left: 22px;
   height: 38px;
   color: #656363;
   font-family: "OpenSans";
   font-size: 13.333px;
 }
 .sidebar li a:hover {
+  padding-left: 34px;
   color: #2c2c2c;
 }
 .content {
