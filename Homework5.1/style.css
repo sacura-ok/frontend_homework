@@ -1,0 +1,212 @@
+* {
+  text-decoration: none;
+}
+/*Помогите разобраться. У body высота 36px, поэтому форма выравнивается не по центру.
+ Почему у body такая высота?
+ Как выровнять по центру?
+*/
+body {
+  position:relative;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Tahoma", "Helvetica Neue", sans-serif;
+  background: url(img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*menu*/
+.menu{
+  height: 36px;
+  text-align: right;
+  background: url(img/bg_menu.png) repeat-x;
+}
+.menu li{
+  display: inline-block;
+  line-height: 33px;
+}
+.menu a{
+  padding: 0 12px;
+  height: 36px;
+  display: block;
+  float: left;
+  color: #60b5ed;
+}
+.menu li:nth-child(1) a:hover,
+.menu li:nth-child(2) a:hover,
+.menu li:nth-child(3) a:hover,
+.menu li:nth-child(4) a:hover,
+.menu li:nth-child(5) a:hover{
+  background: #4eabda;
+  color: #fff;
+  font-weight: bold;
+}
+.menu li:nth-child(5) a{
+  padding-right: 17px;
+}
+.menu li:nth-child(6) a{
+  padding: 0 17px;
+  height: 35px;
+  color: #fff;
+  border-left: 1px solid #56a2dc;
+}
+.menu li:nth-child(7) a{
+  margin-right: 20px;
+  padding: 0 14px;
+  height: 35px;
+  color: #fff;
+  border-right: 1px solid #56a2dc;
+  border-left: 1px solid #56a2dc;
+  text-align: center;
+}
+.menu li:nth-child(6) a:focus,
+.menu li:nth-child(7) a:focus{
+  background: linear-gradient(to top,  #2e7ac4, #51b1dc);
+  border-bottom: 1px solid #56a2dc;
+}
+.menu img{
+  position: relative;
+  float: left;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 3px;
+}
+span{
+  text-decoration: underline;
+}
+
+/*container*/
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 560px;
+  height: 613px;
+  margin-left: -280px;
+  /*margin-top: 200px;*/
+}
+.form_name{
+  margin-bottom: 2px;
+  height: 62px;
+  background: rgba(0, 0, 0, 0.63);
+  color: #fff;
+  text-align: center;
+  line-height: 62px;
+  font-size: 24px;
+}
+.form_content{
+  height: 500px;
+  background: rgba(0, 0, 0, 0.63);
+  text-align: center;
+}
+.form_content a{
+  display: inline-block;
+  margin-top: 36px;
+}
+.form_content p{
+  position: relative;
+  margin: 30px auto;
+  width: 276px;
+  color: #999;
+}
+.form_content p::before{
+  content: " ";
+  position: absolute;
+  width: 120px;
+  top: 6px;
+  left: 154px;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #000;
+}
+.form_content p::after{
+  content: " ";
+  position: absolute;
+  width: 120px;
+  top: 6px;
+  left: 1px;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #000;
+}
+input{
+  display: block;
+  margin: auto;
+  margin-bottom: 16px;
+  padding-left: 19px;
+  width: 257px;
+  height: 33px;
+  background: #000;
+  border: none;
+  border-bottom: 1px solid #494949;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder{
+  color: #cccccc;
+}
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder{
+  color: #cccccc;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+  outline:none;
+  background: #1b5288;
+  border-bottom: 1px solid #689bcc;
+  box-shadow: 0 0 8px 2px #689bcc;
+}
+input[type="text"]:focus::-webkit-input-placeholder,
+input[type="email"]:focus::-webkit-input-placeholder,
+input[type="password"]:focus::-webkit-input-placeholder{
+  color: #fffbfb;
+}
+input[type="text"]:focus::-moz-placeholder,
+input[type="email"]:focus::-moz-placeholder,
+input[type="password"]:focus::-moz-placeholder{
+  color: #fffbfb;
+}
+input[type="checkbox"] {
+  display:none;
+}
+input[type="checkbox"] + label{
+  display: block;
+  margin: 19px auto;
+  width: 276px;
+  color: #cccccc;
+  text-align: left;
+}
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin: -2px 8px 0 0;
+  background: url(img/checkbox.png) no-repeat;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label::before {
+  background:url(img/checkbox_checked.png) no-repeat;
+}
+input[type="submit"]{
+  margin-top: 22px;
+  padding-left: 12px;
+  padding-bottom: 3px;
+  width: 150px;
+  height: 35px;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+  border-radius: 3px;
+  border-bottom: 1px solid #3686ca;
+  background: linear-gradient(to top, rgba(46, 122, 196, 1), rgba(103, 198, 230, 0.9));
+  box-shadow: 1px -1px 1px 0px #67c6e6;
+}
+.form_footer{
+  height: 48px;
+  font-size: 11px;
+  color: #cccccc;
+  background: rgba(0, 0, 0, 0.63);
+  text-align: center;
+  line-height: 16px;
+}

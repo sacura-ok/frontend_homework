@@ -1,0 +1,31 @@
+* {
+    text-decoration: none;
+}
+body {
+  margin: 0 auto;;
+}
+table{
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+}
+td{
+  border: 5px solid #000;
+}
+/* border белый цвет для дополнительных ячеек снизу и справа*/
+tr td:last-child,
+tr:last-child td{
+  border: 5px solid white;
+}
+.col_yellow{
+  background: yellow;
+}
+.col_red{
+  background: red;
+}
+.col_black{
+  background: black;
+}
+.col_blue{
+  background: blue;
+}
