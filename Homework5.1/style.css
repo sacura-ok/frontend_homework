@@ -1,12 +1,8 @@
 * {
   text-decoration: none;
 }
-/*Помогите разобраться. У body высота 36px, поэтому форма выравнивается не по центру.
- Почему у body такая высота?
- Как выровнять по центру?
-*/
 body {
-  position:relative;
+/*  position:relative;*/
   margin: 0;
   font-size: 14px;
   font-family: "Tahoma", "Helvetica Neue", sans-serif;
@@ -82,7 +78,7 @@ span{
   width: 560px;
   height: 613px;
   margin-left: -280px;
-  /*margin-top: 200px;*/
+  margin-top: -306px;
 }
 .form_name{
   margin-bottom: 2px;
@@ -134,6 +130,7 @@ input{
   width: 257px;
   height: 33px;
   background: #000;
+  color: #fff;
   border: none;
   border-bottom: 1px solid #494949;
 }
