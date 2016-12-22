@@ -40,6 +40,9 @@ body {
 }
 header,
 section,
+.blurbs,
+.brandlogos,
+.articles,
 main,
 footer{
   height: 100%;
@@ -404,6 +407,9 @@ input[type=radio] {
     }
     header,
     section,
+    .blurbs,
+    .brandlogos,
+    .articles,
     main,
     footer{
       height: 100%;
@@ -609,6 +615,9 @@ input[type=radio] {
     }
     header,
     section,
+    .blurbs,
+    .brandlogos,
+    .articles,
     main,
     footer{
        height: 100%;
@@ -824,6 +833,9 @@ input[type=radio] {
       }
       header,
       section,
+      .blurbs,
+      .brandlogos,
+      .articles,
       main,
       footer{
          height: 100%;
