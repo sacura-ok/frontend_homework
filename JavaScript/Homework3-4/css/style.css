@@ -1,0 +1,40 @@
+body {
+}
+.container {
+  width: 500px;
+}
+.text-center {
+  padding: 50px 0 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.col-form-legend {
+  margin: 10px 0 5px;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.form-check-label {
+  display: block;
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+.form-check-input {
+  vertical-align: top;
+}
+.button {
+  text-align: center;
+
+}
+.btn {
+  padding: 10px 30px;
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #d4e2f2;
+  border: 2px solid #675f5f;
+  border-radius: 0;
+}
