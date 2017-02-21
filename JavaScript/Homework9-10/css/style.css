@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+  max-width: 960px;
+  padding: 0 20px 40px 20px;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
+}
+.jcarousel-wrapper{
+  margin-bottom: 50px;
+}
+
+/*Menu*/
+.menu{
+  position: relative;
+  margin: 20px 0;
+  height: 60px;
+  background: #f95d5d;
+}
+.submenu{
+  display: none;
+  /*visibility: hidden;*/
+  position: absolute;
+ 	top: 60px;
+ 	width: 130px;
+	background: #f95d5d;
+  list-style: none;
+}
+.menu__item{
+  display: inline-block;
+  width: 130px;
+  text-align: center;
+}
+.submenu .menu__link{
+  padding: 10px 0;
+  border-bottom: 1px solid #d44f4f;
+}
+.menu__link{
+  display: block;
+  padding: 20px 0;
+  color: #fff;
+  text-decoration: none;
+}
+.active{
+  background: #db6b6b;
+}
+.display{
+  display: block;
+}
+/*Forms*/
+form {
+  float: right;
+  margin-left: 100px;
+  font-weight: bold;
+}
+
+/*jQuery form*/
+.niceCheck {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  cursor: pointer;
+  background: url(../img/checkbox.png);
+}
+.jQuery label{
+  margin-top: 20px;
+  font-weight: normal;
+  margin-right: 20px;
+}
+.niceCheck input {
+  display: none;
+}
+.niceChecked {
+  background-position: 0 -17px;
+}
+.niceCheckDisabled {
+  background-image: url(../img/checkbox-disabled.png);
+}
+
+/*css form*/
+.css input[type=checkbox] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.css label {
+  font-weight: normal;
+  cursor: pointer;
+}
+.css label:after {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/checkbox-css.png);
+  position: relative;
+  top: 3px;
+  margin-left: 15px;
+}
+.cssCheck:checked + label:after {
+  background-position: 0 -17px;
+}

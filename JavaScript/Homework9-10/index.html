@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework9-10</title>
+	<link href="css/jcarousel.responsive.css" rel="stylesheet">
+	<link href="css/nice-select.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Carousel</h1>
+      <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+          <ul>
+            <li><img src="img/img1.jpg" alt="Image 1"></li>
+            <li><img src="img/img2.jpg" alt="Image 2"></li>
+            <li><img src="img/img3.jpg" alt="Image 3"></li>
+            <li><img src="img/img4.jpg" alt="Image 4"></li>
+            <li><img src="img/img5.jpg" alt="Image 5"></li>
+            <li><img src="img/img6.jpg" alt="Image 6"></li>
+          </ul>
+        </div>
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+	  	  <p class="jcarousel-pagination"></p>
+	    </div>
+
+			<div id="menu" class="menu">
+				<ul>
+					<li class="menu__item"><a class="menu__link" href="#">nav 1</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">nav 2</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">nav 3</a>
+						<ul class="submenu">
+							<li class="menu__item"><a class="menu__link" href="#">nav 1</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">nav 2</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">nav 3</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">nav 4</a></li>
+							<li class="menu__item"><a class="menu__link" href="#">nav 5</a></li>
+						</ul>
+					</li>
+					<li class="menu__item"><a class="menu__link" href="#">nav 4</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">nav 5</a></li>
+				</ul>
+			</div>
+
+	  	<select>
+    		<option data-display="Select">Option 1</option>
+		    <option value="1">Option 2</option>
+		    <option value="2">Option 3</option>
+		  	<option value="3">Option 4</option>
+		    <option value="4">Option 5</option>
+		  </select>
+
+			<form action="#" class="jQuery">jQuery
+				<div><label for="ch1">label 1</label><input type="checkbox" class="niceCheck" id="ch1" tabindex="1" /> </div>
+				<div><label for="ch2">label 2</label><input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" /></div>
+				<div><label for="ch3">label 3</label><input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" /></div>
+			</form>
+
+			<form action="#" class="css">CSS
+				<div><input type="checkbox" class="cssCheck" id="check1"/><label for="check1">label 1</label> </div>
+				<div><input type="checkbox" class="cssCheck" id="check2"/><label class="css" for="check2">label 2</label></div>
+				<div><input type="checkbox" class="cssCheck" id="check3"/><label class="css" for="check3">label 3</label></div>
+			</form>
+
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery.jcarousel.min.js"></script>
+<script src="js/jcarousel.responsive.js"></script>
+<script src="js/jquery.menu.js"></script>
+<!-- <script src="js/js.menu.js"></script> -->
+<script src="js/jquery.nice-select.js"></script>
+<script src="js/jquery.checkbox.js"></script>
+</body>
+</html>
