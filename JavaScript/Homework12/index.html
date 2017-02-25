@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework12</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <script type = "text/html" id = "my-page">
+    <div class="wrapper">
+
+  		<div class="font_fa">
+  			<h2><%= data[0].fio %></h2>
+  			<p class=center>
+  				<img src="<%= data[0].photo %>" height="200" width="200" alt="Фотография">
+  			</p>
+  			<p><span><%= data[0].position %></span></p>
+  		</div>
+  		<div class="font_f">
+  			<h3><%= data[0].title %></h3>
+  			<ul>
+        <% for (var i = 1; i < data.length; i++) { %>
+  				<li><%= data[i].content %></li>
+        <% }; %>
+  			</ul>
+  		</div>
+  		<div class="font_f">
+  			<h3><%= data[0].titlePhone %></h3>
+  			<p class="font_fa atr_col"><%= data[0].phone %></p>
+  			<h3><%= data[0].titleVk %></h3>
+  			<p>
+  				<a href="<%= data[0].linkVk %>" target="_blank"><%= data[0].linkText %></a>
+  			</p>
+  		</div>
+  		<div class="font_f">
+  			<h3><%= data[0].titleFb %></h3>
+  			<p class="atr_col"><%= data[0].intoFb %></p>
+  		</div>
+  	</div>
+
+  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
