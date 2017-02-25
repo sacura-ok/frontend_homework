@@ -7,7 +7,7 @@ $(function(){
      photo: 'img/photo.jpg',
      position: 'Инженер-программист',
      title: 'Хочу учить фронтенд, потому что:',
-     titlePhone: 'Мой контктный телефон:',
+     titlePhone: 'Мой контактный телефон:',
      phone: '+380662452552',
      titleVk: 'Мой профиль Вконтакте:',
      linkVk: 'https://vk.com/k_ogurova',
