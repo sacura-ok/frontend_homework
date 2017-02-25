@@ -37,6 +37,11 @@ h1{
   width: 130px;
   text-align: center;
 }
+.menu__item--arrow_down > .menu__link {
+    background-image: url(../img/arrow-down.png);
+    background-position: 100px 29px;
+    background-repeat: no-repeat;
+}
 .submenu .menu__link{
   padding: 10px 0;
   border-bottom: 1px solid #d44f4f;
