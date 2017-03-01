@@ -46,5 +46,8 @@
             elementsList.animate({ left : currentLeftValue + "px"}, 500);
         }
     });
+    
+    return this;
+    
   }
 })(jQuery);
