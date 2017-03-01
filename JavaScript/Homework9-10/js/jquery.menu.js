@@ -3,7 +3,7 @@ $(function(){
           function() {
               $(this).addClass('active');
               $(this).find('.submenu').stop(true, true);
-              $(this).find('.submenu').slideDown();
+              $(this).find('.submenu').delay(300).slideDown();
           },
           function() {
               $(this).removeClass('active');
