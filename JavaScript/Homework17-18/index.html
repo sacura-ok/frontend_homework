@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework13-14</title>
+	<!-- <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet"> -->
+	<link href="css/style.min.css" rel="stylesheet">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<script type="text/html" id="test">
+ <div class="container">
+	<div class="row">
+		<div class="col text-center"><%= data[0].head %></div>
+	</div>
+	<div class="row">
+    <div class="col">
+      <% for (var i = 2; i < data.length; i++) { %>
+			  <fieldset class="question">
+        <% for (var n = 0; n < q.length-1; n++) { %>
+	 		    <legend class="col-form-legend"><%= data[i][n].question%></legend>
+          <% for (var j = 0; j < a.length-1; j++) { %>
+			      <label class="answer form-check-label"><input class="form-check-input" type="checkbox"><%= data[i][1][j].answer %></label>
+          <% }; %>
+        <% }; %>
+		    </fieldset>
+      <% }; %>
+		  <div class="button">
+				<button  class="btn click" type="button"><%= data[1].button %></button>
+			</div>
+    </div>
+  </div>
+ </div>
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/script.min.js"></script>
+
+</body>
+</html>
