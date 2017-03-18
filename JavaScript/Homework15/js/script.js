@@ -1,5 +1,26 @@
 $(function(){
 
+  var $body = $('body');
+  var $modal;
+  var $close;
+  var $overlay = $('<div class="overlay"></div>');
+  var $modal = $('<div class="modal-result">'+
+                    '<button type="button" class="close">x</button>'+
+                    '<div class="modal__title">Nothing found on your request</div>'+
+                  '</div>');
+
+   function showModal(e){
+     $body.append($overlay);
+     $body.append($modal);
+     $('.close').on('click',closeModal);
+   }
+   
+   function closeModal(){
+     $modal.remove();
+     $overlay.remove();
+   }
+
+
   $('input').focus(function() {
     $(this).val('');
   });
@@ -16,9 +37,13 @@ $(function(){
 	     dataType: 'jsonp',
 	     type: 'GET',
 	     success: function(result){
-		     for( n = 0; n < result.hits.length; n++){
-            $('.block-images').append('<div class="block-images__image"><img src="'+result.hits[n].webformatURL+'"></div>'); // result.data[x].images.low_resolution.url - это URL картинки среднего разрешения, 306х306
-		    }
+         if (result.hits.length === 0){
+            showModal();
+         } else {
+            for( n = 0; n < result.hits.length; n++){
+              $('.block-images').append('<div class="block-images__image"><img src="'+result.hits[n].webformatURL+'"></div>'); // result.data[x].images.low_resolution.url - это URL картинки среднего разрешения, 306х306
+		        }
+        }
 	    },
 	     error: function(result){
 		     console.log(result);
@@ -42,9 +67,13 @@ $(function(){
 	       dataType: 'jsonp',
 	       type: 'GET',
 	       success: function(result){
-		         for( n = 0; n < result.hits.length; n++){
+           if (result.hits.length === 0){
+                showModal();
+           } else {
+             for( n = 0; n < result.hits.length; n++){
                $('.block-images').append('<div class="block-images__image"><img src="'+result.hits[n].webformatURL+'"></div>'); // result.data[x].images.low_resolution.url - это URL картинки среднего разрешения, 306х306
 		         }
+           }
 	       },
 	       error: function(result){
 		         console.log(result);
