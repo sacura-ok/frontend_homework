@@ -1,0 +1,226 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$aircraft-name: 'aircraft';
+$aircraft-x: 0px;
+$aircraft-y: 0px;
+$aircraft-offset-x: 0px;
+$aircraft-offset-y: 0px;
+$aircraft-width: 41px;
+$aircraft-height: 41px;
+$aircraft-total-width: 82px;
+$aircraft-total-height: 82px;
+$aircraft-image: '../img/sprite.png';
+$aircraft: (0px, 0px, 0px, 0px, 41px, 41px, 82px, 82px, '../img/sprite.png', 'aircraft', );
+$key-name: 'key';
+$key-x: 41px;
+$key-y: 0px;
+$key-offset-x: -41px;
+$key-offset-y: 0px;
+$key-width: 41px;
+$key-height: 41px;
+$key-total-width: 82px;
+$key-total-height: 82px;
+$key-image: '../img/sprite.png';
+$key: (41px, 0px, -41px, 0px, 41px, 41px, 82px, 82px, '../img/sprite.png', 'key', );
+$tea-name: 'tea';
+$tea-x: 0px;
+$tea-y: 41px;
+$tea-offset-x: 0px;
+$tea-offset-y: -41px;
+$tea-width: 41px;
+$tea-height: 41px;
+$tea-total-width: 82px;
+$tea-total-height: 82px;
+$tea-image: '../img/sprite.png';
+$tea: (0px, 41px, 0px, -41px, 41px, 41px, 82px, 82px, '../img/sprite.png', 'tea', );
+$tv-name: 'tv';
+$tv-x: 41px;
+$tv-y: 41px;
+$tv-offset-x: -41px;
+$tv-offset-y: -41px;
+$tv-width: 41px;
+$tv-height: 41px;
+$tv-total-width: 82px;
+$tv-total-height: 82px;
+$tv-image: '../img/sprite.png';
+$tv: (41px, 41px, -41px, -41px, 41px, 41px, 82px, 82px, '../img/sprite.png', 'tv', );
+$aircraft-2x-name: 'aircraft-2x';
+$aircraft-2x-x: 0px;
+$aircraft-2x-y: 0px;
+$aircraft-2x-offset-x: 0px;
+$aircraft-2x-offset-y: 0px;
+$aircraft-2x-width: 82px;
+$aircraft-2x-height: 82px;
+$aircraft-2x-total-width: 164px;
+$aircraft-2x-total-height: 164px;
+$aircraft-2x-image: '../img/sprite-2x.png';
+$aircraft-2x: (0px, 0px, 0px, 0px, 82px, 82px, 164px, 164px, '../img/sprite-2x.png', 'aircraft-2x', );
+$key-2x-name: 'key-2x';
+$key-2x-x: 82px;
+$key-2x-y: 0px;
+$key-2x-offset-x: -82px;
+$key-2x-offset-y: 0px;
+$key-2x-width: 82px;
+$key-2x-height: 82px;
+$key-2x-total-width: 164px;
+$key-2x-total-height: 164px;
+$key-2x-image: '../img/sprite-2x.png';
+$key-2x: (82px, 0px, -82px, 0px, 82px, 82px, 164px, 164px, '../img/sprite-2x.png', 'key-2x', );
+$tea-2x-name: 'tea-2x';
+$tea-2x-x: 0px;
+$tea-2x-y: 82px;
+$tea-2x-offset-x: 0px;
+$tea-2x-offset-y: -82px;
+$tea-2x-width: 82px;
+$tea-2x-height: 82px;
+$tea-2x-total-width: 164px;
+$tea-2x-total-height: 164px;
+$tea-2x-image: '../img/sprite-2x.png';
+$tea-2x: (0px, 82px, 0px, -82px, 82px, 82px, 164px, 164px, '../img/sprite-2x.png', 'tea-2x', );
+$tv-2x-name: 'tv-2x';
+$tv-2x-x: 82px;
+$tv-2x-y: 82px;
+$tv-2x-offset-x: -82px;
+$tv-2x-offset-y: -82px;
+$tv-2x-width: 82px;
+$tv-2x-height: 82px;
+$tv-2x-total-width: 164px;
+$tv-2x-total-height: 164px;
+$tv-2x-image: '../img/sprite-2x.png';
+$tv-2x: (82px, 82px, -82px, -82px, 82px, 82px, 164px, 164px, '../img/sprite-2x.png', 'tv-2x', );
+$spritesheet-width: 82px;
+$spritesheet-height: 82px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($aircraft, $key, $tea, $tv, );
+$spritesheet: (82px, 82px, '../img/sprite.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 164px;
+$retina-spritesheet-height: 164px;
+$retina-spritesheet-image: '../img/sprite-2x.png';
+$retina-spritesheet-sprites: ($aircraft-2x, $key-2x, $tea-2x, $tv-2x, );
+$retina-spritesheet: (164px, 164px, '../img/sprite-2x.png', $retina-spritesheet-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$aircraft-group-name: 'aircraft';
+$aircraft-group: ('aircraft', $aircraft, $aircraft-2x, );
+$key-group-name: 'key';
+$key-group: ('key', $key, $key-2x, );
+$tea-group-name: 'tea';
+$tea-group: ('tea', $tea, $tea-2x, );
+$tv-group-name: 'tv';
+$tv-group: ('tv', $tv, $tv-2x, );
+$retina-groups: ($aircraft-group, $key-group, $tea-group, $tv-group, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}
