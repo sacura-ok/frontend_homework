@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: url(../img/bg.jpg)  no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+
+}
+.wrapper{
+  margin: 2% auto;
+  padding: 2%;
+  width: 320px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.4);
+}
+.list__task{
+  position: relative;
+  height: 50px;
+}
+.list__item{
+  margin: 2%;
+  padding: 2% 12%;
+  height: 28px;
+  width: 232px;
+  background: rgba(75, 49, 28, 0.9);
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+.list__select{
+  position: absolute;
+  top: 40%;
+  left: 4%;
+}
+.btn{
+  width: 140px;
+  height: 36px;
+  border: 1px solid rgba(75, 49, 28, 0.9);
+  color: rgba(75, 49, 28, 0.9);
+  background: rgba(255, 255, 255, 0);
+  outline: none;
+  box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.4);
+}
+.btn:hover{
+  box-shadow: none;
+}
+.list__delete{
+  position: absolute;
+  top: 26%;
+  left: 87%;
+  color: rgba(255, 250, 245, 0.9);
+  border-left: 1px solid rgba(255, 250, 245, 0.9);
+  line-height: 1.5;
+  font-size: 1rem;
+  width: 10.3%;
+  height: 27px;
+}
+.close{
+  top: 6%;
+  left: 87%;
+  height: 31px;
+  line-height: 2;
+  color: rgba(75, 49, 28, 0.9);
+  border: 1px solid rgba(75, 49, 28, 0.9);
+
+}
+.task__add{
+  width: 20px;
+  font-weight: bold;
+}
+.list__change{
+  display: none;
+  position: absolute;
+  top: 17%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.4);
+  height: 86px;
+  z-index: 2;
+}
+.list__text{
+  padding: 0 5px;
+  margin: 5px;
+  width: 80%;
+  height: 73px;
+  border: 1px solid rgba(75, 49, 28, 0.9);
+  float: left;
+  outline: none;
+}
+.list__save{
+  width: 10.7%;
+  position: absolute;
+  top: 54%;
+  left: 87%;
+  height: 33px;
+}
+.task__value{
+  width: 133px;
+  border: 1px solid rgba(75, 49, 28, 0.9);
+  color: rgba(75, 49, 28, 0.9);
+  background: rgba(255, 255, 255, 0);
+  margin-right: 4px;
+  height: 34px;
+  padding-left: 5px;
+  outline: none;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework23-24</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+	<script type="text/template" id="toDolist">
+ 		<div class="wrapper">
+  		<div class="task">
+				<input type="text" class="task__value" placeholder="Add task"><button class="task__add btn">+</button>
+				<button  class="task__del-selected btn" type="button">Delete selected tasks</button>
+			</div>
+			<div class="list">
+			</div>
+		</div>
+	</script>
+
+	<script type="text/template" id="list-template">
+			<% for (var i =0 ; i < data.length; i++) {%>
+				<div class="list__task">
+					<input class="list__select" type="checkbox">
+					<input type="text" class="list__item" value="<%= data[i] %>">
+					<span  data-value="<%= data[i] %>" class="list__delete btn">X</span>
+					<div class="list__change">
+							<textarea class="list__text" cols="32"><%= data[i] %></textarea>
+							<button  class="list__save btn" type="button">Save</button>
+							<span class="list__delete btn close">X</span>
+					</div>
+				</div>
+			<% }; %>
+	</script>
+
+<script data-main="js/app" src="js/require.js"></script>
+</body>
+</html>
